@@ -73,40 +73,48 @@ function buildCharts(sample) {
     //   Object.entries(firstPerson).forEach(([key, value]) =>
     //     {console.log(key + ': ' + value);});
     // });
-    console.log(sampleArray);
-    console.log(firstSample);
+    
+    console.log("sampleArray --> " , sampleArray);
+    console.log("firstSample -->" , firstSample);
 
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otuIds = firstSample.otu_ids;
     var otuLabels = firstSample.otu_labels;
     var sampleValues = firstSample.sample_values;
 
+    console.log("otuLabels = " + otuLabels);
+
+    var toptuids = otuIds.slice(0,10);
+    console.log("toptuids = " + toptuids);
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
 
-    //console.log(sampleArray.slice(0, 10));
-
+    var top10Values = toptuids.map(toptuids => "Uids " + toptuids);
+    console.log("top10Values = " + top10Values); 
+   
     var yticks = sampleValues.sort((a,b) => a-b).reverse().slice(0,10);
-    console.log(yticks);
-    
-    // 9. Create the layout for the bar chart. 
-    var barLayout = {
-      x: yticks.map(row => row.sampleValues),
-      y: yticks.map(row => row.yticks),
-      text: yticks.map(row => row.otuLabels),
-      name: "Greek",
+    console.log("yticks = " + yticks); 
+
+    // 8. Create the trace for the bar chart. 
+    var barData = {
+      x: yticks.reverse(),
+      y: top10Values.reverse(),
+      name: "Something",
       type: "bar",
       orientation: "h"
     };
+    var data = [barData];
+
+    // 9. Create the layout for the bar chart. 
+    var barLayout = {
+      title: 'Top 10 Bacteria'
+    };
+
     console.log(barLayout);
 
-    // 8. Create the trace for the bar chart. 
-    var barData = [
-      barLayout
-    ];
-
     // 10. Use Plotly to plot the data with the layout. 
-    //Plotly.newPlot("plot", barData, barLayout);
+    Plotly.newPlot("bar-plot", data, barLayout);
+
   });
 }

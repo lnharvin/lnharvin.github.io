@@ -27,4 +27,4 @@ Create data visualizations that are attractive, accessible and interactive via G
 
 ## Summary
 
-Using the interactive dashboard our client can identify the top 10 bacterial species in each volunteers belly button. 
+Using the interactive dashboard our client can identify the top 10 bacterial species in each volunteers belly button as well as hover over graph content to gain more insight into the names of the bacteria and more. 

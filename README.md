@@ -6,17 +6,17 @@ Create data visualizations that are attractive, accessible and interactive via G
 ## Deliverables
 
 -   1: Create a Horizontal Bar Chart
-    -   ![example of interactive bar char for ID 1242](blob/main/images/bar.PNG)
+    -   ![example of interactive bar char for ID 1242](images/bar.PNG)
 
 -   2: Create a Bubble Chart
-    -   ![bubble chart](blob/images/bubble.png)
+    -   ![bubble chart](images/bubble.png)
 
 -   3: Create a Gauge Chart
-    -   ![washing gauge](blob/images/gauge.PNG)
+    -   ![washing gauge](images/gauge.PNG)
 
 -   4: Customize the Dashboard
 
-[>>> Click to access interactive web page](https://lnharvin.github.io/plotly_charting/)
+[>>> Click here to access interactive web page](https://lnharvin.github.io/plotly_charting/)
 
 ## Technologies Used
 

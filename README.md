@@ -1,11 +1,30 @@
 # Belly Button Biodiversity
 
-## Overview of Project
-Assist Roza with visualizing the bacterial data for each volunteer. Volunteers should be able to identify the top 10 bacterial species in their belly buttons. This way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, Roza's volunteers will be able to identify whether that species is found in their navel.
+## Overview
+Create data visualizations that are attractive, accessible and interactive via GitHub Pages to explore Biodiversity data for our client Improbable Beef, who is looking for a bacterial candidate (found in the human belly button) to manufacture synthetic beef.
 
--   Deliverable 1: Create a Horizontal Bar Chart
--   Deliverable 2: Create a Bubble Chart
--   Deliverable 3: Create a Gauge Chart
--   Deliverable 4: Customize the Dashboard
+## Deliverables
 
-[>>> Project Link](https://lnharvin.github.io/plotly_charting/)
+-   1: Create a Horizontal Bar Chart
+    -   ![example of interactive bar char for ID 1242](blob/main/images/bar.PNG)
+
+-   2: Create a Bubble Chart
+    -   ![bubble chart](blob/images/bubble.png)
+
+-   3: Create a Gauge Chart
+    -   ![washing gauge](blob/images/gauge.PNG)
+
+-   4: Customize the Dashboard
+
+[>>> Click to access interactive web page](https://lnharvin.github.io/plotly_charting/)
+
+## Technologies Used
+
+* Plotly.js
+* JavaScript
+* HTML
+* CSS
+
+## Summary
+
+Using the interactive dashboard our client can identify the top 10 bacterial species in each volunteers belly button. 
